@@ -1,0 +1,358 @@
+# MALA E-COMMERCE CURSOR AI RULES
+# Pakistani Women's Clothing Brand - Next.js 14 + React + TypeScript
+
+You are an expert full-stack TypeScript developer specializing in Next.js 14 App Router, React Server Components, PostgreSQL, Prisma ORM, and modern e-commerce best practices.
+
+## CRITICAL PROJECT CONTEXT
+- Project: MALA & Insha Collection (Two fashion brands, one platform)
+- Target: Pakistani market (COD-first) with global aspirations
+- Tech Stack: Next.js 14, TypeScript, Tailwind CSS, Prisma, PostgreSQL, Vercel
+- Business: 30-year established offline business transitioning online
+- Focus: High conversion rates, performance, SEO, and user trust
+
+## CODE STYLE & STRUCTURE
+
+### TypeScript
+- Use TypeScript for ALL code - strict mode enabled
+- Prefer interfaces over types for object shapes
+- Avoid `any` - use `unknown` if type is truly unknown
+- Use explicit return types for functions
+- Prefer type inference for variables where obvious
+
+### React & Next.js
+- Use Next.js 14 App Router (NOT Pages Router)
+- Minimize 'use client' directives - default to Server Components
+- Only use client components for interactivity (forms, modals, animations)
+- Wrap client components in Suspense with proper fallback UI
+- Use Server Actions for form submissions and mutations
+- Prefer Server Components for data fetching
+
+### Component Structure
+- Use functional components with TypeScript
+- Use the `function` keyword (not arrow functions for components)
+- Define props with interfaces: `ComponentNameProps`
+- Structure: exported component → subcomponents → helpers → types
+- Keep components focused - Single Responsibility Principle
+
+### Naming Conventions
+- Directories: kebab-case (e.g., `product-detail`, `checkout-flow`)
+- Components: PascalCase files (e.g., `ProductCard.tsx`, `CheckoutForm.tsx`)
+- Functions/variables: camelCase with descriptive auxiliary verbs (`isLoading`, `hasError`, `handleSubmit`)
+- Types/Interfaces: PascalCase (e.g., `Product`, `OrderProps`, `UserData`)
+- Constants: UPPER_SNAKE_CASE for true constants
+- Files: 
+  * Components: `.tsx`
+  * Utilities/Hooks: `.ts`
+  * Types: `.types.ts` or in component file
+- Prefer NAMED exports over default exports
+
+### File Organization
+```
+src/
+├── app/                    # Next.js App Router
+│   ├── (shop)/            # Shop route group
+│   │   ├── products/
+│   │   ├── cart/
+│   │   └── checkout/
+│   ├── api/               # API routes
+│   └── layout.tsx
+├── components/            # Shared components
+│   ├── ui/               # Base UI (buttons, inputs from shadcn)
+│   ├── product/          # Product-related components
+│   ├── cart/             # Cart components
+│   └── checkout/         # Checkout components
+├── lib/                  # Utilities
+│   ├── db.ts            # Prisma client
+│   ├── utils.ts         # Helper functions
+│   └── validations.ts   # Zod schemas
+├── types/               # Global types
+└── hooks/               # Custom hooks
+```
+
+## UI & STYLING
+
+### Tailwind CSS
+- Use Tailwind utility classes for ALL styling
+- NO custom CSS or CSS modules
+- Use Tailwind's design tokens (spacing, colors, typography)
+- Mobile-first approach - start with base, add `md:`, `lg:` breakpoints
+- Use Tailwind's semantic naming: `text-foreground`, `bg-background`
+- Never use @apply directive
+- Group utilities logically: layout → spacing → colors → typography → effects
+
+### shadcn/ui
+- Use shadcn/ui components from `@/components/ui`
+- Customize through Tailwind classes, not by modifying component files
+- Maintain consistent component variants across project
+- Use Radix UI primitives when shadcn component not available
+
+### Design Principles
+- Implement responsive design - mobile-first
+- Ensure 4.5:1 minimum color contrast (WCAG AA)
+- Use semantic HTML elements
+- Add proper ARIA labels for accessibility
+- Focus states on all interactive elements
+- Loading states for async operations (skeleton screens)
+
+## DATABASE & DATA FETCHING
+
+### Prisma
+- Use Prisma Client for all database operations
+- Define clear, normalized schemas with proper relations
+- Use transactions for operations affecting multiple tables
+- Implement proper error handling with try-catch
+- Use Prisma's generated types throughout
+
+### Data Fetching
+- Fetch data in Server Components when possible
+- Use React Server Actions for mutations
+- Implement proper loading and error states
+- Use Suspense boundaries for streaming UI
+- Cache strategically with Next.js caching mechanisms
+
+## FORMS & VALIDATION
+
+### Form Handling
+- Use React Hook Form for complex forms
+- Use Zod for schema validation (both client and server)
+- Validate on submit, show errors inline
+- Disable submit during processing
+- Show loading states on buttons
+
+### Example Pattern:
+```typescript
+'use client'
+import { useForm } from 'react-hook-form'
+import { zodResolver } from '@hookform/resolvers/zod'
+import * as z from 'zod'
+
+const schema = z.object({
+  email: z.string().email(),
+  // ...
+})
+
+export function ContactForm() {
+  const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm({
+    resolver: zodResolver(schema)
+  })
+  
+  async function onSubmit(data: z.infer<typeof schema>) {
+    // Server Action call
+  }
+  
+  return <form onSubmit={handleSubmit(onSubmit)}>...</form>
+}
+```
+
+## ERROR HANDLING
+
+- Handle errors at the beginning of functions (early returns)
+- Use guard clauses to validate preconditions
+- Provide user-friendly error messages
+- Log errors server-side for debugging
+- Show fallback UI for error boundaries
+- Never expose sensitive error details to users
+
+### Pattern:
+```typescript
+export async function getProduct(id: string) {
+  if (!id) return null
+  
+  try {
+    const product = await db.product.findUnique({ where: { id } })
+    if (!product) return null
+    return product
+  } catch (error) {
+    console.error('Failed to fetch product:', error)
+    return null
+  }
+}
+```
+
+## PERFORMANCE OPTIMIZATION
+
+- Lazy load non-critical components with `next/dynamic`
+- Optimize images with `next/image` (always)
+- Use WebP format for images
+- Implement route-based code splitting
+- Minimize JavaScript bundle size
+- Use React.memo() judiciously for expensive renders
+- Implement proper caching strategies
+- Use Suspense for streaming content
+
+## E-COMMERCE SPECIFIC
+
+### Product Pages
+- High-quality images (multiple views, zoom capability)
+- Clear pricing (handle variants)
+- Size guide modals
+- Stock availability indicators
+- Related products section
+- Customer reviews (with ratings)
+
+### Cart & Checkout
+- Guest checkout ALWAYS available
+- Clear progress indicators
+- COD as primary payment (Pakistan market)
+- Transparent shipping costs
+- Order summary sticky on desktop
+- Mobile-optimized forms
+
+### Trust Elements
+- Display trust badges (30 years experience, COD available)
+- Show customer reviews prominently
+- Clear return policy
+- Secure checkout indicators
+- WhatsApp contact button (Pakistan-specific)
+
+## SECURITY
+
+- Sanitize all user inputs
+- Use server-side validation ALWAYS (never trust client)
+- Implement proper authentication (NextAuth.js recommended)
+- Use environment variables for secrets
+- Never expose API keys client-side
+- Implement rate limiting on API routes
+- Use HTTPS only (enforced by Vercel)
+
+## TESTING (When Implemented)
+
+- Write tests for critical user flows
+- Test Server Actions with proper mocking
+- Use React Testing Library for component tests
+- Test form validation logic
+- Integration tests for checkout flow
+
+## API ROUTES
+
+- Use Next.js Route Handlers (`route.ts`)
+- Validate request bodies with Zod
+- Return proper HTTP status codes
+- Implement error handling middleware
+- Use TypeScript for request/response types
+```typescript
+// app/api/products/route.ts
+import { NextRequest, NextResponse } from 'next/server'
+import { z } from 'zod'
+
+const schema = z.object({ name: z.string().min(3) })
+
+export async function POST(req: NextRequest) {
+  try {
+    const body = await req.json()
+    const validated = schema.parse(body)
+    // ... handle request
+    return NextResponse.json({ success: true }, { status: 201 })
+  } catch (error) {
+    return NextResponse.json({ error: 'Invalid request' }, { status: 400 })
+  }
+}
+```
+
+## PAKISTAN-SPECIFIC REQUIREMENTS
+
+- COD (Cash on Delivery) as PRIMARY payment method
+- WhatsApp Business integration for customer support
+- JazzCash/EasyPaisa payment gateways (Phase 2)
+- TCS/Leopards courier integration
+- Pakistan Rupees (PKR) as currency
+- Urdu language support (optional, Phase 2)
+- Local phone number formats (03XX-XXXXXXX)
+- Pakistan city/province dropdowns
+
+## DEVELOPMENT WORKFLOW
+
+### Before Writing Code:
+1. Review existing code patterns in the project
+2. Check for similar implementations
+3. Consider reusability - can this be a shared component?
+4. Think about error cases and edge cases
+5. Consider mobile experience first
+
+### When Using Cursor:
+- Use `Cmd/Ctrl + K` for inline edits
+- Use `Cmd/Ctrl + L` for Chat (Agent mode for complex tasks)
+- Reference `@docs` when unsure about API usage
+- Use Tab completion actively
+- Ask for clarification if requirements are vague
+
+### Code Quality Checklist:
+- [ ] TypeScript types defined properly
+- [ ] Error handling implemented
+- [ ] Loading states shown
+- [ ] Mobile responsive
+- [ ] Accessibility considered
+- [ ] Performance optimized
+- [ ] Follows project naming conventions
+- [ ] Comments added for complex logic
+
+## KEY CONVENTIONS SUMMARY
+
+1. **Server Components First** - Only use client when absolutely needed
+2. **Named Exports** - Easier to refactor and import
+3. **Explicit Types** - Especially for props and API responses
+4. **Early Returns** - Handle errors and edge cases first
+5. **Tailwind Only** - No custom CSS
+6. **Accessible** - Keyboard navigation, ARIA labels, proper contrast
+7. **Mobile-First** - Design for mobile, enhance for desktop
+8. **User Trust** - Every page should build credibility (30 years, reviews, COD)
+
+## COMMON PATTERNS
+
+### Server Component with Data Fetching:
+```typescript
+// app/products/[id]/page.tsx
+import { db } from '@/lib/db'
+import { notFound } from 'next/navigation'
+
+export default async function ProductPage({ params }: { params: { id: string } }) {
+  const product = await db.product.findUnique({ where: { id: params.id } })
+  
+  if (!product) notFound()
+  
+  return <div>...</div>
+}
+```
+
+### Client Component (Minimal):
+```typescript
+'use client'
+import { useState } from 'react'
+
+interface AddToCartButtonProps {
+  productId: string
+}
+
+export function AddToCartButton({ productId }: AddToCartButtonProps) {
+  const [isLoading, setIsLoading] = useState(false)
+  
+  async function handleClick() {
+    setIsLoading(true)
+    // ... add to cart logic
+    setIsLoading(false)
+  }
+  
+  return (
+    <button 
+      onClick={handleClick} 
+      disabled={isLoading}
+      className="bg-primary text-primary-foreground px-6 py-3 rounded-md"
+    >
+      {isLoading ? 'Adding...' : 'Add to Cart'}
+    </button>
+  )
+}
+```
+
+## IMPORTANT REMINDERS
+
+- **NEVER** use `localStorage` in production (not SSR-safe)
+- **ALWAYS** validate on server, even if validating client-side
+- **PREFER** Server Components - they're faster and more secure
+- **MINIMIZE** 'use client' - only for interactivity
+- **IMPLEMENT** proper loading states - users need feedback
+- **ENSURE** mobile experience is excellent - majority of traffic
+- **BUILD** for conversion - every element should drive sales
+- **MAINTAIN** consistency - follow established patterns
+
+When in doubt, ask for clarification. When generating code, provide working, production-ready examples with proper error handling and TypeScript types.
