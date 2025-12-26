@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MALA | Timeless Elegance</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#53d22d",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#162013",
+                        "surface-dark": "#21301c",
+                        "surface-border": "#426039",
+                        "text-secondary": "#a2c398"
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "serif": ["Manrope", "serif"] // User requested serif headings but instructions say reuse font-family from example which is Manrope. I will stick to Manrope for consistency with the provided component code but style it elegantly.
+                    },
+                    borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar for webkit */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #162013;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #426039;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #53d22d;
+        }
+    </style>
+</head>
+<body class="bg-background-dark text-white font-display antialiased selection:bg-primary selection:text-background-dark">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Navigation -->
+<header class="sticky top-0 z-50 flex items-center justify-between border-b border-surface-border bg-background-dark/95 backdrop-blur-md px-6 py-4 md:px-12">
+<div class="flex items-center gap-4">
+<div class="size-8 text-primary">
+<span class="material-symbols-outlined text-4xl">local_florist</span>
+</div>
+<h2 class="text-2xl font-black tracking-tighter text-white">MALA</h2>
+</div>
+<nav class="hidden lg:flex items-center gap-8">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-sm font-medium text-text-secondary hover:text-white transition-colors" href="#">Collections</a>
+<a class="text-sm font-medium text-text-secondary hover:text-white transition-colors" href="#">New Arrivals</a>
+<a class="text-sm font-medium text-text-secondary hover:text-white transition-colors" href="#">About</a>
+<a class="text-sm font-medium text-text-secondary hover:text-white transition-colors" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-3">
+<button class="flex items-center justify-center size-10 rounded-full hover:bg-surface-dark text-white transition-colors">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</button>
+<button class="flex items-center justify-center size-10 rounded-full hover:bg-surface-dark text-white transition-colors relative">
+<span class="material-symbols-outlined text-[20px]">shopping_cart</span>
+<span class="absolute top-1 right-1 size-2 bg-primary rounded-full"></span>
+</button>
+<button class="flex items-center justify-center size-10 rounded-full hover:bg-surface-dark text-white transition-colors hidden md:flex">
+<span class="material-symbols-outlined text-[20px]">account_circle</span>
+</button>
+<button class="flex items-center justify-center size-10 rounded-full hover:bg-surface-dark text-white transition-colors lg:hidden">
+<span class="material-symbols-outlined text-[20px]">menu</span>
+</button>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative h-[85vh] w-full overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center bg-no-repeat" data-alt="Elegant Pakistani fashion model in dark green velvet dress posing in soft lighting" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC3j_QvoitUf83vneovI1Ik894vPMb-uSJUU53gTrUkeWEzKgsNYC52dFUd8FMwU-r_ycfWbn2yJOCGgR8kM7cgl3BHw8JV7LvSpydCEqfodd0axzpBLL5iuAxw__faHxdHKExiguBmnoxZrbbpCyRP-IQ-ZN1WR5N2WOgyiTDVCXQknybYpCdsJV3z28v9zZSv41VOFfnHd7MJ3XrNtHa-KP3BHGW6_uUWogUTpPzWoPc7d5PIpUbm02lh-axsIU0EUoKKDad4Ggg");'>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/50 to-transparent"></div>
+<div class="relative flex h-full flex-col items-center justify-center px-4 text-center">
+<span class="mb-4 inline-block rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-primary backdrop-blur-sm">
+                    Est. 1994
+                </span>
+<h1 class="mb-4 max-w-4xl text-5xl font-black leading-tight tracking-tight text-white md:text-7xl lg:text-8xl">
+                    Timeless Elegance,<br/> <span class="text-primary">Modern Heritage</span>
+</h1>
+<p class="mb-8 max-w-lg text-lg font-medium text-gray-200 md:text-xl">
+                    Celebrating 30 years of Pakistani luxury fashion. Handcrafted for the woman of today.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="h-14 rounded-full bg-primary px-8 text-base font-bold text-background-dark shadow-[0_0_20px_rgba(83,210,45,0.3)] transition-transform hover:scale-105 hover:bg-[#65e03f]">
+                        Shop Collection
+                    </button>
+<button class="h-14 rounded-full border border-white/20 bg-white/5 backdrop-blur-md px-8 text-base font-bold text-white transition-colors hover:bg-white/10">
+                        View Lookbook
+                    </button>
+</div>
+</div>
+</section>
+<!-- Trust Indicators -->
+<section class="border-y border-surface-border bg-surface-dark/50 py-8">
+<div class="mx-auto max-w-7xl px-4 md:px-8">
+<div class="grid grid-cols-2 gap-6 md:grid-cols-4">
+<div class="flex flex-col items-center gap-3 text-center md:flex-row md:text-left">
+<div class="flex size-12 items-center justify-center rounded-full bg-surface-dark text-primary">
+<span class="material-symbols-outlined text-2xl">verified</span>
+</div>
+<div>
+<h3 class="text-sm font-bold text-white">30 Years Heritage</h3>
+<p class="text-xs text-text-secondary">Trusted since 1994</p>
+</div>
+</div>
+<div class="flex flex-col items-center gap-3 text-center md:flex-row md:text-left">
+<div class="flex size-12 items-center justify-center rounded-full bg-surface-dark text-primary">
+<span class="material-symbols-outlined text-2xl">local_shipping</span>
+</div>
+<div>
+<h3 class="text-sm font-bold text-white">Free Shipping</h3>
+<p class="text-xs text-text-secondary">Across Pakistan</p>
+</div>
+</div>
+<div class="flex flex-col items-center gap-3 text-center md:flex-row md:text-left">
+<div class="flex size-12 items-center justify-center rounded-full bg-surface-dark text-primary">
+<span class="material-symbols-outlined text-2xl">payments</span>
+</div>
+<div>
+<h3 class="text-sm font-bold text-white">Cash on Delivery</h3>
+<p class="text-xs text-text-secondary">Pay when you receive</p>
+</div>
+</div>
+<div class="flex flex-col items-center gap-3 text-center md:flex-row md:text-left">
+<div class="flex size-12 items-center justify-center rounded-full bg-surface-dark text-primary">
+<span class="material-symbols-outlined text-2xl">assignment_return</span>
+</div>
+<div>
+<h3 class="text-sm font-bold text-white">Easy Returns</h3>
+<p class="text-xs text-text-secondary">7-day hassle-free</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Collections -->
+<section class="py-20">
+<div class="mx-auto max-w-7xl px-4 md:px-8">
+<div class="mb-12 flex items-end justify-between">
+<div>
+<h2 class="text-3xl font-bold tracking-tight text-white md:text-4xl">Curated Collections</h2>
+<p class="mt-2 text-text-secondary">Explore our finest selections for every occasion.</p>
+</div>
+<a class="hidden items-center gap-1 text-sm font-bold text-primary hover:underline md:flex" href="#">
+                        View All <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+<div class="group relative aspect-[3/4] overflow-hidden rounded-xl bg-surface-dark cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Woman in red heavily embroidered bridal dress traditional jewelry" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAlJ5qve1mFTxyA9Y1E-XPV6oIcnvO_sjGQcwA3RK6xXeNyxJ7yf_MI6t-6T-aW6dQ4C_c78Y-xuO1K51PUJsBd-aHr5-wVAfTZBio8edUelygY7AiIS2540R7A1XaiActCa05MhzoFMpcJbaf_IZP36KZDOvPDXgSGSEmDy_06Ikd0DhwPLWjZzYV742ZnyluA2ocblw6ff8jB7bntoJTidQHx-K8Rv94yowaHuhAdMPprqUiOlSUKXDjeUHne-ezg5XDVc3v2JDM");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-8 flex flex-col justify-end">
+<h3 class="text-2xl font-bold text-white mb-1">Bridal Couture</h3>
+<p class="text-gray-300 text-sm mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">Handcrafted perfection for your big day</p>
+<span class="inline-flex items-center gap-2 text-sm font-bold text-primary">Explore <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+</div>
+</div>
+<div class="group relative aspect-[3/4] overflow-hidden rounded-xl bg-surface-dark cursor-pointer md:mt-12">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Modern Pakistani fashion model in casual chic floral kurta" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAxgL1A1d4q1vhZf-u7pDZP5S9HA7VKGbsJGySbDxhLxyc8gfaYt1y4PITICbxzbbVIGacOmFZ39Lc3PlWsQ0Yg0yyUST0TMSRFOxUkW4CcPOSOx8pGxrb9mCi5UbQO6DJGo6CTx2e4dDtklMQRfVJTEhYyEIT8uyW3Hn02E9iv2UWZbaMDMOB1GP6ycerhCfiCUgLH7dqByWZKQ9ztsZdMSvsD8L5JuzH1bY-AreBlamKocJ9UsnZvA8uAneygFLQD_xFkwq3pUV4");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-8 flex flex-col justify-end">
+<h3 class="text-2xl font-bold text-white mb-1">Pret-a-Porter</h3>
+<p class="text-gray-300 text-sm mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">Ready to wear elegance for everyday</p>
+<span class="inline-flex items-center gap-2 text-sm font-bold text-primary">Explore <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+</div>
+</div>
+<div class="group relative aspect-[3/4] overflow-hidden rounded-xl bg-surface-dark cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Detailed shot of luxurious unstitched fabric with intricate gold embroidery" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAknaeKAwHgZhxqmWg8GBus0OiXRilekciOnw1vHl6Cw4LSOOS19kln7V9CHpO_hc7hMkT50FqlNTAw8GmBoueV1-XGl1HgCHg9EA1FXKubKlg7jlZWPVbLuqq6khqIY1pz57NXmNzqJPXVb99zjSBj76HJyP2yWJkcCz_cvaM6eDI9W8F8H91DvTH_cEyQ9G_vSAUIm7KkUCqMZ0bP-jR1tN7NG47aFmiFyyuUwY6ahvoc2qU2wGl-vRNanZBnQmXB4Kfabn0ZPB8");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-8 flex flex-col justify-end">
+<h3 class="text-2xl font-bold text-white mb-1">Luxury Unstitched</h3>
+<p class="text-gray-300 text-sm mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">Premium fabrics, limitless possibilities</p>
+<span class="inline-flex items-center gap-2 text-sm font-bold text-primary">Explore <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- New Arrivals Grid -->
+<section class="bg-surface-dark py-20">
+<div class="mx-auto max-w-7xl px-4 md:px-8">
+<div class="mb-12 text-center">
+<span class="mb-2 block text-sm font-bold uppercase tracking-wider text-primary">Fresh Drops</span>
+<h2 class="text-3xl font-black text-white md:text-5xl">New Arrivals</h2>
+</div>
+<div class="grid grid-cols-2 gap-x-4 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
+<!-- Product Card 1 -->
+<div class="group flex flex-col gap-4">
+<div class="relative aspect-square w-full overflow-hidden rounded-2xl bg-background-dark">
+<span class="absolute left-3 top-3 z-10 rounded-full bg-primary px-3 py-1 text-xs font-bold text-background-dark">New</span>
+<button class="absolute right-3 top-3 z-10 rounded-full bg-black/40 p-2 text-white hover:bg-primary hover:text-background-dark transition-colors">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+<img alt="Emerald Green Silk Tunic with gold embroidery" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Emerald green silk tunic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxGLiOQm0E1GKAkXRnvT3wwhbpd-EuejhaKWTDvgO8lzcHkrw7ilNXEhk2Vh6pTgaTxNIaFGI5bpbK3PJ2JuyKWtyWirvTafF6eKeF2YIquW_rIuTYbLjNteYEqB-5QVgfaNjM1-Ly_eHIHk5Y3H7bxlLB4Byk7STc1-MXkSRolC2tkXCXlsv8hefcLHeqwfoTNcrbJCff_fyj53hmp87NTIqzQ-EAYp1CE2z5BVX-ug3ThGs67MYNBilE7elUGHZPNKw_0YLZI9k"/>
+<div class="absolute inset-x-0 bottom-0 p-4 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 translate-y-4">
+<button class="w-full rounded-xl bg-white py-3 text-sm font-bold text-black shadow-lg hover:bg-primary transition-colors">Add to Cart</button>
+</div>
+</div>
+<div>
+<div class="flex justify-between items-start">
+<h3 class="text-base font-bold text-white group-hover:text-primary transition-colors">Emerald Silk Tunic</h3>
+<p class="text-sm font-bold text-white">Rs. 12,500</p>
+</div>
+<p class="text-sm text-text-secondary">Formal Wear</p>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group flex flex-col gap-4">
+<div class="relative aspect-square w-full overflow-hidden rounded-2xl bg-background-dark">
+<span class="absolute left-3 top-3 z-10 rounded-full bg-primary px-3 py-1 text-xs font-bold text-background-dark">New</span>
+<button class="absolute right-3 top-3 z-10 rounded-full bg-black/40 p-2 text-white hover:bg-primary hover:text-background-dark transition-colors">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+<img alt="Ivory White Chiffon suit 3 piece" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Ivory white chiffon suit" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZgQemWTJYcNGbQ1CLiUieXl88zu7SuUFGzsf5Gv-aNQWfwjf3C2dp_sh7LAldJT9SN7y1vEA-Wa43JxqvubIBkZYKYpXGERXs3qbHsYGEbC9IStdlrJ8dRcJXLMHC8xcgKfdXfoxl1i-l_ZPvav9_A_c-YCm2efOSDOvUxjLn9oIe1Y-3d9fEgDMPbWDqfsCJ4jS0-a1uQaP1WVvmarV_7ZPp3EulU_gVdgG6uDEvYlFRvGG_nsfiwd0zlNe9Obu1dg8s9Tj0Htc"/>
+<div class="absolute inset-x-0 bottom-0 p-4 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 translate-y-4">
+<button class="w-full rounded-xl bg-white py-3 text-sm font-bold text-black shadow-lg hover:bg-primary transition-colors">Add to Cart</button>
+</div>
+</div>
+<div>
+<div class="flex justify-between items-start">
+<h3 class="text-base font-bold text-white group-hover:text-primary transition-colors">Ivory Chiffon Set</h3>
+<p class="text-sm font-bold text-white">Rs. 18,900</p>
+</div>
+<p class="text-sm text-text-secondary">Luxury Pret</p>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group flex flex-col gap-4">
+<div class="relative aspect-square w-full overflow-hidden rounded-2xl bg-background-dark">
+<button class="absolute right-3 top-3 z-10 rounded-full bg-black/40 p-2 text-white hover:bg-primary hover:text-background-dark transition-colors">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+<img alt="Crimson Red Velvet Shawl with border" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Crimson red velvet shawl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCN9sRxqEiEvfwUQz8K5WQ5OqfKfAdQaCeIWGTs9F34YA9tJhoMO7AB1abw23UDdHPJxYDB7Yt6Fl7CLJmlFkbpDqEjtm7XlJU2VqF324iUpbQVZQ4arxZzFKwTy9qShyj244Zx1sZBTgOKr79rqwacA22f7PemYZDqexnH-l3JJ9nqiFnIILn-sJrMzKvw2VlnerE4KN9dhhnJX8iudPY1GjY5L3GA-r0djmfdxmZBGib0jrGTeN0pNVBveXoegpXmSAUk1GqwJvI"/>
+<div class="absolute inset-x-0 bottom-0 p-4 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 translate-y-4">
+<button class="w-full rounded-xl bg-white py-3 text-sm font-bold text-black shadow-lg hover:bg-primary transition-colors">Add to Cart</button>
+</div>
+</div>
+<div>
+<div class="flex justify-between items-start">
+<h3 class="text-base font-bold text-white group-hover:text-primary transition-colors">Royal Velvet Shawl</h3>
+<p class="text-sm font-bold text-white">Rs. 8,500</p>
+</div>
+<p class="text-sm text-text-secondary">Accessories</p>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="group flex flex-col gap-4">
+<div class="relative aspect-square w-full overflow-hidden rounded-2xl bg-background-dark">
+<button class="absolute right-3 top-3 z-10 rounded-full bg-black/40 p-2 text-white hover:bg-primary hover:text-background-dark transition-colors">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+<img alt="Black and Gold Formal Gown" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Black and gold formal gown" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKBOUWX4nKot0oZPzEtLRVHZLXmMAvV8nIcFmEv8rDTyk99I4KBOUfjyVd_Ra1pEYH35q5GBI1VDjkGWnoUPoK3KbvjFR5jiiuXKYHKJQga86p6S34eaqiC_9Fez52XKRjYZsry76iM6Xlu-XW1KV0SzTGCTnHexNkRqiTOxb2fugg3b9o_L2NvCXp5POUX5EXc6HWZ5WH0wKhIGyytyqWIWrwpNYG329pY-AgHILbyl6cksgmiSxsRDv3UgikOmAJuXmzwvwVJps"/>
+<div class="absolute inset-x-0 bottom-0 p-4 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 translate-y-4">
+<button class="w-full rounded-xl bg-white py-3 text-sm font-bold text-black shadow-lg hover:bg-primary transition-colors">Add to Cart</button>
+</div>
+</div>
+<div>
+<div class="flex justify-between items-start">
+<h3 class="text-base font-bold text-white group-hover:text-primary transition-colors">Noir Gold Evening</h3>
+<p class="text-sm font-bold text-white">Rs. 24,000</p>
+</div>
+<p class="text-sm text-text-secondary">Bridal Series</p>
+</div>
+</div>
+</div>
+<div class="mt-12 text-center">
+<button class="inline-flex items-center gap-2 rounded-full border border-surface-border bg-transparent px-8 py-3 text-sm font-bold text-white hover:bg-surface-dark hover:border-primary transition-colors">
+                        View All New Arrivals
+                    </button>
+</div>
+</div>
+</section>
+<!-- Social Proof / Reviews -->
+<section class="py-20 relative overflow-hidden">
+<!-- Background decorative elements -->
+<div class="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+<div class="absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+<div class="mx-auto max-w-7xl px-4 md:px-8 relative z-10">
+<div class="flex flex-col md:flex-row items-end justify-between mb-12 gap-6">
+<div>
+<h2 class="text-3xl font-bold text-white mb-2">Loved by 10,000+ Women</h2>
+<div class="flex items-center gap-2">
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-xl fill-current">star</span>
+<span class="material-symbols-outlined text-xl fill-current">star</span>
+<span class="material-symbols-outlined text-xl fill-current">star</span>
+<span class="material-symbols-outlined text-xl fill-current">star</span>
+<span class="material-symbols-outlined text-xl fill-current">star</span>
+</div>
+<span class="text-white font-medium">4.9/5 Average Rating</span>
+</div>
+</div>
+<div class="flex gap-2">
+<button class="size-10 rounded-full border border-surface-border flex items-center justify-center hover:bg-primary hover:text-background-dark hover:border-primary transition-colors">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<button class="size-10 rounded-full border border-surface-border flex items-center justify-center hover:bg-primary hover:text-background-dark hover:border-primary transition-colors">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Review 1 -->
+<div class="rounded-2xl border border-surface-border bg-surface-dark/50 p-6 hover:border-primary/50 transition-colors">
+<div class="flex gap-4 mb-4">
+<div class="size-12 rounded-full bg-cover bg-center" data-alt="Portrait of happy customer Sarah" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCh73pXaG0SNJqpI0tBzybn9YGT64L2PSFovRR9U16TfmKsJD-AQh2Eq69w76dnufXj-HlviKNVJERRTrkgoxUzgu4K6MbytFx9OnnFOKUHUbP9554SSepEBlINMKRrLBDjzVmIxHBN08pjtGIukCE_bW7OfZStGJXq4-Kp-mVChe1UvsjGHw4bNEkNVEI2QtRcM6R-YFZ0qdPdnXglsV5OlwUO4HQYzbJJ-UecddvN1NpFNcao5YkqDB464GWBqtLO2WEi1Xj_cvg");'></div>
+<div>
+<h4 class="font-bold text-white">Sarah Ahmed</h4>
+<p class="text-xs text-text-secondary">Verified Buyer • Karachi</p>
+</div>
+</div>
+<p class="text-gray-300 text-sm leading-relaxed">"The quality of the fabric is unmatched. I wore the Emerald Silk Tunic to my sister's wedding and received so many compliments. MALA never disappoints!"</p>
+</div>
+<!-- Review 2 -->
+<div class="rounded-2xl border border-surface-border bg-surface-dark/50 p-6 hover:border-primary/50 transition-colors">
+<div class="flex gap-4 mb-4">
+<div class="size-12 rounded-full bg-cover bg-center" data-alt="Portrait of happy customer Fatima" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBt0fz0JfbV2L_3qJEu3kXHykz6qqDUNXiR0-ZWYr-6jEFaTdmdvXKvfg_g2rwLmJmCcSqhgO1wtDtf_HpM7lJNH7oDXcEFHs5cZnbjIJYHTdRQ0YPfn9wZzPfLcmad7Y4M5UtxXfXJxBB-GrvXPe9vID4Vwd8aC3Jqajy-f_hwpIDk_Yr9LqiNVi-mxUevS5t4cQfy35q5b_JOBT8sAmr3aUhikeNMo4BG4dKrSRQfRRYI1kpyA1eGuuf-rbg62AqFcsX8SIm0Ha8");'></div>
+<div>
+<h4 class="font-bold text-white">Fatima Khan</h4>
+<p class="text-xs text-text-secondary">Verified Buyer • Lahore</p>
+</div>
+</div>
+<p class="text-gray-300 text-sm leading-relaxed">"Ordering online was a breeze. The COD option gave me peace of mind, and the packaging was so luxurious. Truly a premium experience."</p>
+</div>
+<!-- Review 3 -->
+<div class="rounded-2xl border border-surface-border bg-surface-dark/50 p-6 hover:border-primary/50 transition-colors">
+<div class="flex gap-4 mb-4">
+<div class="size-12 rounded-full bg-cover bg-center" data-alt="Portrait of happy customer Zainab" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDQIlgi2dxW3C9-Xai3cMyIjYNMrfSNp95sQT8oR3AST43Cs9uEcKmU4URersbYmUrz9cifJZ1fWwgzOj73FtgVOFuS4hhib0YuzQc5J3NpA7IvXcHDZtySKRe1s4RwiXRs4NHx5BCSyMNqlVWSbNOl5wAjmemevZ2RQeV8iDX-FQTIF9I7pE79xy7KhgQa6oCbMGGhy4SidD5isVq0vsVdSqRI_NHSlyOxmBo9jLI7OXRdETjyZpIuNJaTUvejIFfZyxBGNG-ajkA");'></div>
+<div>
+<h4 class="font-bold text-white">Zainab Malik</h4>
+<p class="text-xs text-text-secondary">Verified Buyer • Islamabad</p>
+</div>
+</div>
+<p class="text-gray-300 text-sm leading-relaxed">"I've been shopping from MALA's store for years. So happy they are finally online! The unstitched collection is just as vibrant as in the photos."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / Footer -->
+<footer class="border-t border-surface-border bg-surface-dark pt-16 pb-8">
+<div class="mx-auto max-w-7xl px-4 md:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+<!-- Brand Column -->
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-2">
+<div class="size-6 text-primary">
+<span class="material-symbols-outlined text-2xl">local_florist</span>
+</div>
+<h2 class="text-xl font-black tracking-tighter text-white">MALA</h2>
+</div>
+<p class="text-text-secondary text-sm">
+                            Redefining Pakistani fashion with a blend of traditional craftsmanship and modern aesthetics.
+                        </p>
+<div class="flex gap-4">
+<a class="size-10 rounded-full bg-background-dark flex items-center justify-center text-white hover:bg-primary hover:text-background-dark transition-colors" href="#">
+<!-- Instagram generic icon via material symbols not perfect, using alternates -->
+<span class="material-symbols-outlined text-lg">photo_camera</span>
+</a>
+<a class="size-10 rounded-full bg-background-dark flex items-center justify-center text-white hover:bg-primary hover:text-background-dark transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">public</span>
+</a>
+<a class="size-10 rounded-full bg-background-dark flex items-center justify-center text-white hover:bg-primary hover:text-background-dark transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">videocam</span>
+</a>
+</div>
+</div>
+<!-- Links Column -->
+<div>
+<h4 class="text-white font-bold mb-6">Shop</h4>
+<ul class="flex flex-col gap-3 text-sm text-text-secondary">
+<li><a class="hover:text-primary transition-colors" href="#">New Arrivals</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Bridal Couture</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Luxury Pret</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Unstitched</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Sale</a></li>
+</ul>
+</div>
+<!-- Links Column -->
+<div>
+<h4 class="text-white font-bold mb-6">Customer Care</h4>
+<ul class="flex flex-col gap-3 text-sm text-text-secondary">
+<li><a class="hover:text-primary transition-colors" href="#">Track Order</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Shipping Policy</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Returns &amp; Exchange</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">FAQs</a></li>
+</ul>
+</div>
+<!-- Newsletter Column -->
+<div>
+<h4 class="text-white font-bold mb-6">Stay in the Loop</h4>
+<p class="text-text-secondary text-sm mb-4">Subscribe for exclusive updates and get 10% off your first order.</p>
+<form class="flex flex-col gap-3">
+<input class="w-full rounded-lg bg-background-dark border border-surface-border px-4 py-3 text-white placeholder-text-secondary/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all text-sm" placeholder="Enter your email" type="email"/>
+<button class="w-full rounded-lg bg-white px-4 py-3 text-sm font-bold text-background-dark hover:bg-primary transition-colors" type="button">Subscribe</button>
+</form>
+</div>
+</div>
+<div class="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+<p class="text-xs text-text-secondary text-center md:text-left">© 2024 MALA Fashion. All rights reserved.</p>
+<div class="flex items-center gap-4 opacity-70 grayscale hover:grayscale-0 transition-all">
+<div class="h-6 w-10 bg-white rounded flex items-center justify-center text-[8px] font-bold text-black" data-alt="Visa Card Icon">VISA</div>
+<div class="h-6 w-10 bg-white rounded flex items-center justify-center text-[8px] font-bold text-black" data-alt="Mastercard Icon">MC</div>
+<div class="flex items-center gap-1 text-xs text-white">
+<span class="material-symbols-outlined text-sm text-primary">lock</span> Secure Checkout
+                        </div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
