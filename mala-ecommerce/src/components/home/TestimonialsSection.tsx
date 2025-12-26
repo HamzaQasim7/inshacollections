@@ -1,23 +1,16 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 import { FEATURED_REVIEWS } from "@/lib/data";
 
 export function TestimonialsSection() {
-  const [activeIndex, setActiveIndex] = useState(0);
-
   const goToPrev = () => {
-    setActiveIndex((prev) =>
-      prev === 0 ? FEATURED_REVIEWS.length - 1 : prev - 1
-    );
+    // Navigation logic for future implementation
   };
 
   const goToNext = () => {
-    setActiveIndex((prev) =>
-      prev === FEATURED_REVIEWS.length - 1 ? 0 : prev + 1
-    );
+    // Navigation logic for future implementation
   };
 
   return (

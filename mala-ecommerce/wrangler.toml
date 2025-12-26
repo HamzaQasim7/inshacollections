@@ -1,0 +1,13 @@
+name = "mala-ecommerce"
+compatibility_date = "2025-12-26"
+
+[build]
+command = "npm run build"
+cwd = "."
+watch_dir = "src"
+
+[build.environment]
+NODE_VERSION = "18"
+
+[[pages_build_output]]
+directory = "out"
