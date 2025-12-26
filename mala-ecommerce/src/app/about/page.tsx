@@ -45,7 +45,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="relative h-[60vh] min-h-[400px] w-full overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3j_QvoitUf83vneovI1Ik894vPMb-uSJUU53gTrUkeWEzKgsNYC52dFUd8FMwU-r_ycfWbn2yJOCGgR8kM7cgl3BHw8JV7LvSpydCEqfodd0axzpBLL5iuAxw__faHxdHKExiguBmnoxZrbbpCyRP-IQ-ZN1WR5N2WOgyiTDVCXQknybYpCdsJV3z28v9zZSv41VOFfnHd7MJ3XrNtHa-KP3BHGW6_uUWogUTpPzWoPc7d5PIpUbm02lh-axsIU0EUoKKDad4Ggg"
           alt="MALA Atelier"
           fill
           className="object-cover"
@@ -107,7 +107,7 @@ export default function AboutPage() {
             </div>
             <div className="relative aspect-square overflow-hidden rounded-lg">
               <Image
-                src="https://images.unsplash.com/photo-1558171813-4c088753af8f?w=800&q=80"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlJ5qve1mFTxyA9Y1E-XPV6oIcnvO_sjGQcwA3RK6xXeNyxJ7yf_MI6t-6T-aW6dQ4C_c78Y-xuO1K51PUJsBd-aHr5-wVAfTZBio8edUelygY7AiIS2540R7A1XaiActCa05MhzoFMpcJbaf_IZP36KZDOvPDXgSGSEmDy_06Ikd0DhwPLWjZzYV742ZnyluA2ocblw6ff8jB7bntoJTidQHx-K8Rv94yowaHuhAdMPprqUiOlSUKXDjeUHne-ezg5XDVc3v2JDM"
                 alt="MALA Workshop"
                 fill
                 className="object-cover"
@@ -190,7 +190,7 @@ export default function AboutPage() {
           <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
             <div className="relative aspect-square overflow-hidden rounded-lg">
               <Image
-                src="https://images.unsplash.com/photo-1594463750939-ebb28c3f7f75?w=800&q=80"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxgL1A1d4q1vhZf-u7pDZP5S9HA7VKGbsJGySbDxhLxyc8gfaYt1y4PITICbxzbbVIGacOmFZ39Lc3PlWsQ0Yg0yyUST0TMSRFOxUkW4CcPOSOx8pGxrb9mCi5UbQO6DJGo6CTx2e4dDtklMQRfVJTEhYyEIT8uyW3Hn02E9iv2UWZbaMDMOB1GP6ycerhCfiCUgLH7dqByWZKQ9ztsZdMSvsD8L5JuzH1bY-AreBlamKocJ9UsnZvA8uAneygFLQD_xFkwq3pUV4"
                 alt="MALA Team"
                 fill
                 className="object-cover"

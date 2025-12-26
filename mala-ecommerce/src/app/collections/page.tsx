@@ -14,7 +14,7 @@ export default function CollectionsPage() {
       {/* Hero Section */}
       <section className="relative h-[40vh] min-h-[300px] w-full overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=1920&q=80"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3j_QvoitUf83vneovI1Ik894vPMb-uSJUU53gTrUkeWEzKgsNYC52dFUd8FMwU-r_ycfWbn2yJOCGgR8kM7cgl3BHw8JV7LvSpydCEqfodd0axzpBLL5iuAxw__faHxdHKExiguBmnoxZrbbpCyRP-IQ-ZN1WR5N2WOgyiTDVCXQknybYpCdsJV3z28v9zZSv41VOFfnHd7MJ3XrNtHa-KP3BHGW6_uUWogUTpPzWoPc7d5PIpUbm02lh-axsIU0EUoKKDad4Ggg"
           alt="MALA Collections"
           fill
           className="object-cover"

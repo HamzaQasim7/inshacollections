@@ -6,7 +6,7 @@ export const COLLECTIONS: Collection[] = [
     name: "Bridal Couture",
     slug: "bridal-couture",
     description: "Exquisite bridal wear for your special day",
-    image: "https://images.unsplash.com/photo-1594463750939-ebb28c3f7f75?w=800&q=80",
+    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCZgQemWTJYcNGbQ1CLiUieXl88zu7SuUFGzsf5Gv-aNQWfwjf3C2dp_sh7LAldJT9SN7y1vEA-Wa43JxqvubIBkZYKYpXGERXs3qbHsYGEbC9IStdlrJ8dRcJXLMHC8xcgKfdXfoxl1i-l_ZPvav9_A_c-YCm2efOSDOvUxjLn9oIe1Y-3d9fEgDMPbWDqfsCJ4jS0-a1uQaP1WVvmarV_7ZPp3EulU_gVdgG6uDEvYlFRvGG_nsfiwd0zlNe9Obu1dg8s9Tj0Htc",
     productCount: 24,
   },
   {
@@ -14,7 +14,7 @@ export const COLLECTIONS: Collection[] = [
     name: "Pret-a-Porter",
     slug: "pret-a-porter",
     description: "Ready to wear elegance for every occasion",
-    image: "https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=800&q=80",
+    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAxGLiOQm0E1GKAkXRnvT3wwhbpd-EuejhaKWTDvgO8lzcHkrw7ilNXEhk2Vh6pTgaTxNIaFGI5bpbK3PJ2JuyKWtyWirvTafF6eKeF2YIquW_rIuTYbLjNteYEqB-5QVgfaNjM1-Ly_eHIHk5Y3H7bxlLB4Byk7STc1-MXkSRolC2tkXCXlsv8hefcLHeqwfoTNcrbJCff_fyj53hmp87NTIqzQ-EAYp1CE2z5BVX-ug3ThGs67MYNBilE7elUGHZPNKw_0YLZI9k",
     productCount: 45,
   },
   {
@@ -22,7 +22,7 @@ export const COLLECTIONS: Collection[] = [
     name: "Luxury Unstitched",
     slug: "luxury-unstitched",
     description: "Premium fabrics for custom creations",
-    image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=800&q=80",
+    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCN9sRxqEiEvfwUQz8K5WQ5OqfKfAdQaCeIWGTs9F34YA9tJhoMO7AB1abw23UDdHPJxYDB7Yt6Fl7CLJmlFkbpDqEjtm7XlJU2VqF324iUpbQVZQ4arxZzFKwTy9qShyj244Zx1sZBTgOKr79rqwacA22f7PemYZDqexnH-l3JJ9nqiFnIILn-sJrMzKvw2VlnerE4KN9dhhnJX8iudPY1GjY5L3GA-r0djmfdxmZBGib0jrGTeN0pNVBveXoegpXmSAUk1GqwJvI",
     productCount: 32,
   },
 ];
@@ -45,9 +45,9 @@ export const PRODUCTS: Product[] = [
     description: "A stunning emerald green silk tunic featuring intricate hand-embroidered details and delicate sequin work. Perfect for formal gatherings and festive occasions. The shirt is crafted from pure crinkle chiffon with a modern cut that flatters all body types.",
     price: 12500,
     images: [
-      "https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=800&q=80",
-      "https://images.unsplash.com/photo-1594463750939-ebb28c3f7f75?w=800&q=80",
-      "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=800&q=80",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAxGLiOQm0E1GKAkXRnvT3wwhbpd-EuejhaKWTDvgO8lzcHkrw7ilNXEhk2Vh6pTgaTxNIaFGI5bpbK3PJ2JuyKWtyWirvTafF6eKeF2YIquW_rIuTYbLjNteYEqB-5QVgfaNjM1-Ly_eHIHk5Y3H7bxlLB4Byk7STc1-MXkSRolC2tkXCXlsv8hefcLHeqwfoTNcrbJCff_fyj53hmp87NTIqzQ-EAYp1CE2z5BVX-ug3ThGs67MYNBilE7elUGHZPNKw_0YLZI9k",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCZgQemWTJYcNGbQ1CLiUieXl88zu7SuUFGzsf5Gv-aNQWfwjf3C2dp_sh7LAldJT9SN7y1vEA-Wa43JxqvubIBkZYKYpXGERXs3qbHsYGEbC9IStdlrJ8dRcJXLMHC8xcgKfdXfoxl1i-l_ZPvav9_A_c-YCm2efOSDOvUxjLn9oIe1Y-3d9fEgDMPbWDqfsCJ4jS0-a1uQaP1WVvmarV_7ZPp3EulU_gVdgG6uDEvYlFRvGG_nsfiwd0zlNe9Obu1dg8s9Tj0Htc",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCN9sRxqEiEvfwUQz8K5WQ5OqfKfAdQaCeIWGTs9F34YA9tJhoMO7AB1abw23UDdHPJxYDB7Yt6Fl7CLJmlFkbpDqEjtm7XlJU2VqF324iUpbQVZQ4arxZzFKwTy9qShyj244Zx1sZBTgOKr79rqwacA22f7PemYZDqexnH-l3JJ9nqiFnIILn-sJrMzKvw2VlnerE4KN9dhhnJX8iudPY1GjY5L3GA-r0djmfdxmZBGib0jrGTeN0pNVBveXoegpXmSAUk1GqwJvI",
     ],
     category: "Formal Wear",
     categorySlug: "formals",
@@ -78,8 +78,8 @@ export const PRODUCTS: Product[] = [
     description: "A timeless ivory ensemble featuring intricate thread work and delicate sequin embellishments. The shirt is crafted from pure crinkle chiffon, paired with raw silk trousers and a heavily embroidered chiffon dupatta.",
     price: 18900,
     images: [
-      "https://images.unsplash.com/photo-1594463750939-ebb28c3f7f75?w=800&q=80",
-      "https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=800&q=80",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCZgQemWTJYcNGbQ1CLiUieXl88zu7SuUFGzsf5Gv-aNQWfwjf3C2dp_sh7LAldJT9SN7y1vEA-Wa43JxqvubIBkZYKYpXGERXs3qbHsYGEbC9IStdlrJ8dRcJXLMHC8xcgKfdXfoxl1i-l_ZPvav9_A_c-YCm2efOSDOvUxjLn9oIe1Y-3d9fEgDMPbWDqfsCJ4jS0-a1uQaP1WVvmarV_7ZPp3EulU_gVdgG6uDEvYlFRvGG_nsfiwd0zlNe9Obu1dg8s9Tj0Htc",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAxGLiOQm0E1GKAkXRnvT3wwhbpd-EuejhaKWTDvgO8lzcHkrw7ilNXEhk2Vh6pTgaTxNIaFGI5bpbK3PJ2JuyKWtyWirvTafF6eKeF2YIquW_rIuTYbLjNteYEqB-5QVgfaNjM1-Ly_eHIHk5Y3H7bxlLB4Byk7STc1-MXkSRolC2tkXCXlsv8hefcLHeqwfoTNcrbJCff_fyj53hmp87NTIqzQ-EAYp1CE2z5BVX-ug3ThGs67MYNBilE7elUGHZPNKw_0YLZI9k",
     ],
     category: "Luxury Pret",
     categorySlug: "luxury-pret",
@@ -111,8 +111,8 @@ export const PRODUCTS: Product[] = [
     description: "Luxurious velvet shawl with intricate gold embroidery, perfect for winter weddings and formal events.",
     price: 8500,
     images: [
-      "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=800&q=80",
-      "https://images.unsplash.com/photo-1594463750939-ebb28c3f7f75?w=800&q=80",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCN9sRxqEiEvfwUQz8K5WQ5OqfKfAdQaCeIWGTs9F34YA9tJhoMO7AB1abw23UDdHPJxYDB7Yt6Fl7CLJmlFkbpDqEjtm7XlJU2VqF324iUpbQVZQ4arxZzFKwTy9qShyj244Zx1sZBTgOKr79rqwacA22f7PemYZDqexnH-l3JJ9nqiFnIILn-sJrMzKvw2VlnerE4KN9dhhnJX8iudPY1GjY5L3GA-r0djmfdxmZBGib0jrGTeN0pNVBveXoegpXmSAUk1GqwJvI",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCZgQemWTJYcNGbQ1CLiUieXl88zu7SuUFGzsf5Gv-aNQWfwjf3C2dp_sh7LAldJT9SN7y1vEA-Wa43JxqvubIBkZYKYpXGERXs3qbHsYGEbC9IStdlrJ8dRcJXLMHC8xcgKfdXfoxl1i-l_ZPvav9_A_c-YCm2efOSDOvUxjLn9oIe1Y-3d9fEgDMPbWDqfsCJ4jS0-a1uQaP1WVvmarV_7ZPp3EulU_gVdgG6uDEvYlFRvGG_nsfiwd0zlNe9Obu1dg8s9Tj0Htc",
     ],
     category: "Accessories",
     categorySlug: "accessories",
@@ -137,8 +137,8 @@ export const PRODUCTS: Product[] = [
     description: "A sophisticated black evening ensemble adorned with intricate gold threadwork. Features a flowing silhouette perfect for formal dinners and evening events.",
     price: 24000,
     images: [
-      "https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=800&q=80",
-      "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=800&q=80",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAxGLiOQm0E1GKAkXRnvT3wwhbpd-EuejhaKWTDvgO8lzcHkrw7ilNXEhk2Vh6pTgaTxNIaFGI5bpbK3PJ2JuyKWtyWirvTafF6eKeF2YIquW_rIuTYbLjNteYEqB-5QVgfaNjM1-Ly_eHIHk5Y3H7bxlLB4Byk7STc1-MXkSRolC2tkXCXlsv8hefcLHeqwfoTNcrbJCff_fyj53hmp87NTIqzQ-EAYp1CE2z5BVX-ug3ThGs67MYNBilE7elUGHZPNKw_0YLZI9k",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCN9sRxqEiEvfwUQz8K5WQ5OqfKfAdQaCeIWGTs9F34YA9tJhoMO7AB1abw23UDdHPJxYDB7Yt6Fl7CLJmlFkbpDqEjtm7XlJU2VqF324iUpbQVZQ4arxZzFKwTy9qShyj244Zx1sZBTgOKr79rqwacA22f7PemYZDqexnH-l3JJ9nqiFnIILn-sJrMzKvw2VlnerE4KN9dhhnJX8iudPY1GjY5L3GA-r0djmfdxmZBGib0jrGTeN0pNVBveXoegpXmSAUk1GqwJvI",
     ],
     category: "Bridal Series",
     categorySlug: "bridal-couture",
@@ -167,8 +167,8 @@ export const PRODUCTS: Product[] = [
     description: "A luxurious velvet ensemble in rich emerald green, featuring intricate gold embroidery and modern silhouette.",
     price: 18500,
     images: [
-      "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=800&q=80",
-      "https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=800&q=80",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCN9sRxqEiEvfwUQz8K5WQ5OqfKfAdQaCeIWGTs9F34YA9tJhoMO7AB1abw23UDdHPJxYDB7Yt6Fl7CLJmlFkbpDqEjtm7XlJU2VqF324iUpbQVZQ4arxZzFKwTy9qShyj244Zx1sZBTgOKr79rqwacA22f7PemYZDqexnH-l3JJ9nqiFnIILn-sJrMzKvw2VlnerE4KN9dhhnJX8iudPY1GjY5L3GA-r0djmfdxmZBGib0jrGTeN0pNVBveXoegpXmSAUk1GqwJvI",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAxGLiOQm0E1GKAkXRnvT3wwhbpd-EuejhaKWTDvgO8lzcHkrw7ilNXEhk2Vh6pTgaTxNIaFGI5bpbK3PJ2JuyKWtyWirvTafF6eKeF2YIquW_rIuTYbLjNteYEqB-5QVgfaNjM1-Ly_eHIHk5Y3H7bxlLB4Byk7STc1-MXkSRolC2tkXCXlsv8hefcLHeqwfoTNcrbJCff_fyj53hmp87NTIqzQ-EAYp1CE2z5BVX-ug3ThGs67MYNBilE7elUGHZPNKw_0YLZI9k",
     ],
     category: "Festive Edit",
     categorySlug: "formals",
@@ -200,8 +200,8 @@ export const PRODUCTS: Product[] = [
     price: 12500,
     originalPrice: 15500,
     images: [
-      "https://images.unsplash.com/photo-1594463750939-ebb28c3f7f75?w=800&q=80",
-      "https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=800&q=80",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCZgQemWTJYcNGbQ1CLiUieXl88zu7SuUFGzsf5Gv-aNQWfwjf3C2dp_sh7LAldJT9SN7y1vEA-Wa43JxqvubIBkZYKYpXGERXs3qbHsYGEbC9IStdlrJ8dRcJXLMHC8xcgKfdXfoxl1i-l_ZPvav9_A_c-YCm2efOSDOvUxjLn9oIe1Y-3d9fEgDMPbWDqfsCJ4jS0-a1uQaP1WVvmarV_7ZPp3EulU_gVdgG6uDEvYlFRvGG_nsfiwd0zlNe9Obu1dg8s9Tj0Htc",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAxGLiOQm0E1GKAkXRnvT3wwhbpd-EuejhaKWTDvgO8lzcHkrw7ilNXEhk2Vh6pTgaTxNIaFGI5bpbK3PJ2JuyKWtyWirvTafF6eKeF2YIquW_rIuTYbLjNteYEqB-5QVgfaNjM1-Ly_eHIHk5Y3H7bxlLB4Byk7STc1-MXkSRolC2tkXCXlsv8hefcLHeqwfoTNcrbJCff_fyj53hmp87NTIqzQ-EAYp1CE2z5BVX-ug3ThGs67MYNBilE7elUGHZPNKw_0YLZI9k",
     ],
     category: "Pret",
     categorySlug: "pret",
@@ -229,8 +229,8 @@ export const PRODUCTS: Product[] = [
     description: "A stunning maroon suit inspired by traditional Pakistani craftsmanship with modern design elements.",
     price: 22000,
     images: [
-      "https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=800&q=80",
-      "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=800&q=80",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAxGLiOQm0E1GKAkXRnvT3wwhbpd-EuejhaKWTDvgO8lzcHkrw7ilNXEhk2Vh6pTgaTxNIaFGI5bpbK3PJ2JuyKWtyWirvTafF6eKeF2YIquW_rIuTYbLjNteYEqB-5QVgfaNjM1-Ly_eHIHk5Y3H7bxlLB4Byk7STc1-MXkSRolC2tkXCXlsv8hefcLHeqwfoTNcrbJCff_fyj53hmp87NTIqzQ-EAYp1CE2z5BVX-ug3ThGs67MYNBilE7elUGHZPNKw_0YLZI9k",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCN9sRxqEiEvfwUQz8K5WQ5OqfKfAdQaCeIWGTs9F34YA9tJhoMO7AB1abw23UDdHPJxYDB7Yt6Fl7CLJmlFkbpDqEjtm7XlJU2VqF324iUpbQVZQ4arxZzFKwTy9qShyj244Zx1sZBTgOKr79rqwacA22f7PemYZDqexnH-l3JJ9nqiFnIILn-sJrMzKvw2VlnerE4KN9dhhnJX8iudPY1GjY5L3GA-r0djmfdxmZBGib0jrGTeN0pNVBveXoegpXmSAUk1GqwJvI",
     ],
     category: "Heritage Collection",
     categorySlug: "formals",
@@ -260,8 +260,8 @@ export const PRODUCTS: Product[] = [
     description: "Classic black silk kurta with subtle gold accents, perfect for evening gatherings.",
     price: 9500,
     images: [
-      "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=800&q=80",
-      "https://images.unsplash.com/photo-1594463750939-ebb28c3f7f75?w=800&q=80",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCN9sRxqEiEvfwUQz8K5WQ5OqfKfAdQaCeIWGTs9F34YA9tJhoMO7AB1abw23UDdHPJxYDB7Yt6Fl7CLJmlFkbpDqEjtm7XlJU2VqF324iUpbQVZQ4arxZzFKwTy9qShyj244Zx1sZBTgOKr79rqwacA22f7PemYZDqexnH-l3JJ9nqiFnIILn-sJrMzKvw2VlnerE4KN9dhhnJX8iudPY1GjY5L3GA-r0djmfdxmZBGib0jrGTeN0pNVBveXoegpXmSAUk1GqwJvI",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCZgQemWTJYcNGbQ1CLiUieXl88zu7SuUFGzsf5Gv-aNQWfwjf3C2dp_sh7LAldJT9SN7y1vEA-Wa43JxqvubIBkZYKYpXGERXs3qbHsYGEbC9IStdlrJ8dRcJXLMHC8xcgKfdXfoxl1i-l_ZPvav9_A_c-YCm2efOSDOvUxjLn9oIe1Y-3d9fEgDMPbWDqfsCJ4jS0-a1uQaP1WVvmarV_7ZPp3EulU_gVdgG6uDEvYlFRvGG_nsfiwd0zlNe9Obu1dg8s9Tj0Htc",
     ],
     category: "Pret",
     categorySlug: "pret",
@@ -289,8 +289,8 @@ export const PRODUCTS: Product[] = [
     description: "Delicate blush pink organza wrap with pearl embellishments, ideal for formal occasions.",
     price: 14000,
     images: [
-      "https://images.unsplash.com/photo-1594463750939-ebb28c3f7f75?w=800&q=80",
-      "https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=800&q=80",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCZgQemWTJYcNGbQ1CLiUieXl88zu7SuUFGzsf5Gv-aNQWfwjf3C2dp_sh7LAldJT9SN7y1vEA-Wa43JxqvubIBkZYKYpXGERXs3qbHsYGEbC9IStdlrJ8dRcJXLMHC8xcgKfdXfoxl1i-l_ZPvav9_A_c-YCm2efOSDOvUxjLn9oIe1Y-3d9fEgDMPbWDqfsCJ4jS0-a1uQaP1WVvmarV_7ZPp3EulU_gVdgG6uDEvYlFRvGG_nsfiwd0zlNe9Obu1dg8s9Tj0Htc",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAxGLiOQm0E1GKAkXRnvT3wwhbpd-EuejhaKWTDvgO8lzcHkrw7ilNXEhk2Vh6pTgaTxNIaFGI5bpbK3PJ2JuyKWtyWirvTafF6eKeF2YIquW_rIuTYbLjNteYEqB-5QVgfaNjM1-Ly_eHIHk5Y3H7bxlLB4Byk7STc1-MXkSRolC2tkXCXlsv8hefcLHeqwfoTNcrbJCff_fyj53hmp87NTIqzQ-EAYp1CE2z5BVX-ug3ThGs67MYNBilE7elUGHZPNKw_0YLZI9k",
     ],
     category: "Formals",
     categorySlug: "formals",
@@ -319,8 +319,8 @@ export const PRODUCTS: Product[] = [
     description: "A majestic gold and blue ensemble perfect for weddings and grand celebrations.",
     price: 28000,
     images: [
-      "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=800&q=80",
-      "https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=800&q=80",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCN9sRxqEiEvfwUQz8K5WQ5OqfKfAdQaCeIWGTs9F34YA9tJhoMO7AB1abw23UDdHPJxYDB7Yt6Fl7CLJmlFkbpDqEjtm7XlJU2VqF324iUpbQVZQ4arxZzFKwTy9qShyj244Zx1sZBTgOKr79rqwacA22f7PemYZDqexnH-l3JJ9nqiFnIILn-sJrMzKvw2VlnerE4KN9dhhnJX8iudPY1GjY5L3GA-r0djmfdxmZBGib0jrGTeN0pNVBveXoegpXmSAUk1GqwJvI",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAxGLiOQm0E1GKAkXRnvT3wwhbpd-EuejhaKWTDvgO8lzcHkrw7ilNXEhk2Vh6pTgaTxNIaFGI5bpbK3PJ2JuyKWtyWirvTafF6eKeF2YIquW_rIuTYbLjNteYEqB-5QVgfaNjM1-Ly_eHIHk5Y3H7bxlLB4Byk7STc1-MXkSRolC2tkXCXlsv8hefcLHeqwfoTNcrbJCff_fyj53hmp87NTIqzQ-EAYp1CE2z5BVX-ug3ThGs67MYNBilE7elUGHZPNKw_0YLZI9k",
     ],
     category: "Bridal",
     categorySlug: "bridal-couture",
@@ -349,8 +349,8 @@ export const PRODUCTS: Product[] = [
     description: "Comfortable lawn suit with beautiful embroidery, perfect for everyday elegance.",
     price: 8500,
     images: [
-      "https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=800&q=80",
-      "https://images.unsplash.com/photo-1594463750939-ebb28c3f7f75?w=800&q=80",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAxGLiOQm0E1GKAkXRnvT3wwhbpd-EuejhaKWTDvgO8lzcHkrw7ilNXEhk2Vh6pTgaTxNIaFGI5bpbK3PJ2JuyKWtyWirvTafF6eKeF2YIquW_rIuTYbLjNteYEqB-5QVgfaNjM1-Ly_eHIHk5Y3H7bxlLB4Byk7STc1-MXkSRolC2tkXCXlsv8hefcLHeqwfoTNcrbJCff_fyj53hmp87NTIqzQ-EAYp1CE2z5BVX-ug3ThGs67MYNBilE7elUGHZPNKw_0YLZI9k",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCZgQemWTJYcNGbQ1CLiUieXl88zu7SuUFGzsf5Gv-aNQWfwjf3C2dp_sh7LAldJT9SN7y1vEA-Wa43JxqvubIBkZYKYpXGERXs3qbHsYGEbC9IStdlrJ8dRcJXLMHC8xcgKfdXfoxl1i-l_ZPvav9_A_c-YCm2efOSDOvUxjLn9oIe1Y-3d9fEgDMPbWDqfsCJ4jS0-a1uQaP1WVvmarV_7ZPp3EulU_gVdgG6uDEvYlFRvGG_nsfiwd0zlNe9Obu1dg8s9Tj0Htc",
     ],
     category: "Casual",
     categorySlug: "pret",
@@ -378,8 +378,8 @@ export const PRODUCTS: Product[] = [
     description: "Modern digital print silk tunic with contemporary design elements.",
     price: 12000,
     images: [
-      "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=800&q=80",
-      "https://images.unsplash.com/photo-1594463750939-ebb28c3f7f75?w=800&q=80",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCN9sRxqEiEvfwUQz8K5WQ5OqfKfAdQaCeIWGTs9F34YA9tJhoMO7AB1abw23UDdHPJxYDB7Yt6Fl7CLJmlFkbpDqEjtm7XlJU2VqF324iUpbQVZQ4arxZzFKwTy9qShyj244Zx1sZBTgOKr79rqwacA22f7PemYZDqexnH-l3JJ9nqiFnIILn-sJrMzKvw2VlnerE4KN9dhhnJX8iudPY1GjY5L3GA-r0djmfdxmZBGib0jrGTeN0pNVBveXoegpXmSAUk1GqwJvI",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCZgQemWTJYcNGbQ1CLiUieXl88zu7SuUFGzsf5Gv-aNQWfwjf3C2dp_sh7LAldJT9SN7y1vEA-Wa43JxqvubIBkZYKYpXGERXs3qbHsYGEbC9IStdlrJ8dRcJXLMHC8xcgKfdXfoxl1i-l_ZPvav9_A_c-YCm2efOSDOvUxjLn9oIe1Y-3d9fEgDMPbWDqfsCJ4jS0-a1uQaP1WVvmarV_7ZPp3EulU_gVdgG6uDEvYlFRvGG_nsfiwd0zlNe9Obu1dg8s9Tj0Htc",
     ],
     category: "Contemporary",
     categorySlug: "pret",
@@ -413,7 +413,7 @@ export const REVIEWS: Review[] = [
     content: "I ordered this for my sister's wedding and I am blown away by the quality. The embroidery is exactly as shown in the pictures, maybe even better. The fabric is very soft and premium. Fits perfectly too!",
     date: "2024-12-15",
     verified: true,
-    images: ["https://images.unsplash.com/photo-1594463750939-ebb28c3f7f75?w=400&q=80"],
+    images: ["https://lh3.googleusercontent.com/aida-public/AB6AXuCZgQemWTJYcNGbQ1CLiUieXl88zu7SuUFGzsf5Gv-aNQWfwjf3C2dp_sh7LAldJT9SN7y1vEA-Wa43JxqvubIBkZYKYpXGERXs3qbHsYGEbC9IStdlrJ8dRcJXLMHC8xcgKfdXfoxl1i-l_ZPvav9_A_c-YCm2efOSDOvUxjLn9oIe1Y-3d9fEgDMPbWDqfsCJ4jS0-a1uQaP1WVvmarV_7ZPp3EulU_gVdgG6uDEvYlFRvGG_nsfiwd0zlNe9Obu1dg8s9Tj0Htc"],
     helpful: 12,
   },
   {
@@ -553,3 +553,6 @@ export const TRUST_BADGES = [
     description: "7-day hassle-free",
   },
 ];
+
+// Hero Image
+export const HERO_IMAGE = "https://lh3.googleusercontent.com/aida-public/AB6AXuC3j_QvoitUf83vneovI1Ik894vPMb-uSJUU53gTrUkeWEzKgsNYC52dFUd8FMwU-r_ycfWbn2yJOCGgR8kM7cgl3BHw8JV7LvSpydCEqfodd0axzpBLL5iuAxw__faHxdHKExiguBmnoxZrbbpCyRP-IQ-ZN1WR5N2WOgyiTDVCXQknybYpCdsJV3z28v9zZSv41VOFfnHd7MJ3XrNtHa-KP3BHGW6_uUWogUTpPzWoPc7d5PIpUbm02lh-axsIU0EUoKKDad4Ggg";

@@ -52,6 +52,7 @@ export interface Review {
   id: string;
   productId: string;
   customerName: string;
+  customerImage?: string;
   customerLocation: string;
   rating: number;
   title: string;

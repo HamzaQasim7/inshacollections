@@ -61,15 +61,15 @@ export function Header() {
           </button>
 
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary">
+          <Link href="/" className="flex items-center gap-2 shrink-0">
+            {/* <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary">
               <span className="font-serif text-lg font-bold text-primary-foreground">M</span>
-            </div>
+            </div> */}
             <span className="font-serif text-2xl font-bold tracking-tight">MALA</span>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex lg:items-center lg:gap-8">
+          <nav className="hidden lg:flex lg:items-center lg:gap-8 lg:ml-10">
             {NAV_LINKS.map((link) => (
               <div
                 key={link.name}

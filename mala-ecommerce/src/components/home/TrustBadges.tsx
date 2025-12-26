@@ -4,7 +4,7 @@ const TRUST_ITEMS = [
   {
     icon: Award,
     title: "30 Years Heritage",
-    description: "Established 1994",
+    description: "Trusted since 1994",
   },
   {
     icon: Truck,
@@ -25,20 +25,20 @@ const TRUST_ITEMS = [
 
 export function TrustBadges() {
   return (
-    <section className="border-y border-border bg-secondary/50 py-8">
-      <div className="container">
+    <section className="border-y border-[#426039] bg-[#21301c]/50 py-8">
+      <div className="mx-auto max-w-7xl px-4 md:px-8">
         <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
           {TRUST_ITEMS.map((item) => (
             <div
               key={item.title}
-              className="flex items-center gap-4 text-center md:text-left"
+              className="flex flex-col items-center gap-3 text-center md:flex-row md:text-left"
             >
-              <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-primary/10">
-                <item.icon className="h-6 w-6 text-primary" />
+              <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-[#21301c] text-primary">
+                <item.icon className="h-6 w-6" />
               </div>
               <div>
-                <h3 className="font-medium text-foreground">{item.title}</h3>
-                <p className="text-sm text-muted-foreground">{item.description}</p>
+                <h3 className="text-sm font-bold text-white">{item.title}</h3>
+                <p className="text-xs text-[#a2c398]">{item.description}</p>
               </div>
             </div>
           ))}
