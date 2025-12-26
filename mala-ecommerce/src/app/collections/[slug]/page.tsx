@@ -10,22 +10,6 @@ import { ChevronRight, Loader2 } from "lucide-react";
 import { PRODUCTS, COLLECTIONS, CATEGORIES } from "@/lib/data";
 import { FilterState, Product } from "@/types";
 
-export async function generateStaticParams() {
-  const params: { slug: string }[] = [];
-  
-  // Add collection slugs
-  COLLECTIONS.forEach((collection) => {
-    params.push({ slug: collection.slug });
-  });
-  
-  // Add category slugs
-  CATEGORIES.forEach((category) => {
-    params.push({ slug: category.slug });
-  });
-  
-  return params;
-}
-
 export default function CollectionPage() {
   const params = useParams();
   const slug = params.slug as string;

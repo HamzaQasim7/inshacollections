@@ -23,12 +23,6 @@ import { PRODUCTS, REVIEWS } from "@/lib/data";
 import { formatPrice, calculateDiscount, cn } from "@/lib/utils";
 import { ProductColor } from "@/types";
 
-export async function generateStaticParams() {
-  return PRODUCTS.map((product) => ({
-    slug: product.slug,
-  }));
-}
-
 export default function ProductPage() {
   const params = useParams();
   const slug = params.slug as string;
